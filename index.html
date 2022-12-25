@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odoo</title>
+    <!-- HTML Favicon -->
+    <link rel="icon" type="image/x-icon" href="./img/images.png">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <!-- navbar here -->
+    <div id="navbar" class="clearfix">
+        <div class="navbar__menu">
+            <a href="#" class="menu--active">Dashboard</a>
+            <a href="#">Tax Finalization</a>
+            <a href="#">Calendar</a>
+            <a href="#"></i>Working Timesheet</a>
+            <a href="#" class="navbar__menu--nonemd">Appraisals</a>
+            <a href="#" class="navbar__menu--nonemd">Project</a>
+            <a href="#" class="navbar__menu--none">Timesheets</a>
+            <a href="#" class="navbar__menu--none">Employees</a>
+            <a href="#" class="navbar__menu--none">Assets</a>
+            <a href="#" class="navbar__menu--none">Helpdesk</a>
+            <a href="#">More <i class="fas fa-caret-down"></i></a>
+        </div>
+        <div class="navbar__profile">
+            <a href="#"><i class="far fa-clock"></i></a>
+            <a href="#"><i class="fas fa-comments"></i></a>
+            <a href="#" class="profile-user">
+                <img class="profile-user__img img" src="./img/user.png" alt="">
+                Nguyễn Hà Hương Dịu
+            </a>
+        </div>
+        <div class="mobile-menu-btn">
+            <a id="mobile-profile-btn" href="#" class="profile-user">
+                <img class="img" src="./img/user.png" alt="">
+                Nguyễn Hà Hương Dịu
+            </a>
+            <a id="mobile-menu-btn" href="#"><i class="fas fa-bars"></i></a>
+        </div>
+    </div>
+
+    <!-- navbar-mobile here -->
+    <div class="modal">
+        <div class="mobile-menu-container">
+            <a href="#" class="menu--active">Dashboard</a>
+            <a href="#">Tax Finalization</a>
+            <a href="#">Calendar</a>
+            <a href="#"></i>Working Timesheet</a>
+            <a href="#">Appraisals</a>
+            <a href="#">Project</a>
+            <a href="#">Timesheets</a>
+            <a href="#">Employees</a>
+            <a href="#">Assets</a>
+            <a href="#">Helpdesk</a>
+            <a href="#">More &nbsp;<i class="fas fa-caret-down"></i></a>
+            <a href="#"><i class="far fa-clock"></i></a>
+            <a href="#"><i class="fas fa-comments"></i></a>
+        </div>
+
+        <div class="mobile-profile-container">
+            <div class="profile__img">
+                <img class="img" src="./img/user.png" alt="">
+            </div>
+            <div class="profile__info">
+                <p class="profile__info--name">NGUYỄN HÀ HƯƠNG DỊU</p>
+                <p>Internship</p>
+                <p>Intern</p>
+            </div>
+            <div class="profile-desc">
+                <div class="profile-desc__gender">
+                    <p><i class="fas fa-venus"></i></p>
+                    <p>Nữ</p>
+                </div>
+                <div class="profile-desc__dob">
+                    <p>DOB</p>
+                    <p>02/10/2000</p>
+                </div>
+            </div>
+            <div class="profile__work">
+                <p>Đã vào làm</p>
+                <p>6 ngày</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="hero"></div>
+
+    <!-- main here -->
+    <div id="main">
+        <!-- profile here -->
+        <div class="main__profile">
+            <div class="profile">
+                <div class="profile__img">
+                    <img class="img" src="./img/user.png" alt="">
+                </div>
+                <div class="profile__info">
+                    <p class="profile__info--name">NGUYỄN HÀ HƯƠNG DỊU</p>
+                    <p>Internship</p>
+                    <p>Intern</p>
+                </div>
+                <div class="profile-desc">
+                    <div class="profile-desc__gender">
+                        <p><i class="fas fa-venus"></i></p>
+                        <p>Nữ</p>
+                    </div>
+                    <div class="profile-desc__dob">
+                        <p>DOB</p>
+                        <p>02/10/2000</p>
+                    </div>
+                </div>
+                <div class="profile__work">
+                    <p>Đã vào làm</p>
+                    <p>6 ngày</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- content here -->
+        <div class="main__content">
+            <marquee class="marquee" direction="left">
+                Xin chào Nguyễn Hà Hương Dịu, chúc bạn có một ngày làm việc thật vui vẻ và hiệu quả !
+            </marquee>
+            <!-- content-cards__top here -->
+            <div class="content-cards__top">
+                <div class="card transition">  
+                    <div class="card-item pink">
+                        <p class="card-item__title">chờ phê duyệt</p>
+                        <div class="card-item__btns">
+                            <button class="btn">
+                                <p class="btn-text">Xin nghỉ</p>
+                                <p class="btn-text btn-num">0</p>
+                            </button>
+                            <button class="btn">
+                                <p class="btn-text">Đi muộn/Về sớm</p>
+                                <p class="btn-text btn-num">0</p>
+                            </button>
+                            <button class="btn">
+                                <p class="btn-text">Xin WFH</p>
+                                <p class="btn-text btn-num">0</p>
+                            </button>
+                            <button class="btn">
+                                <p class="btn-text">Chấm công WFH</p>
+                                <p class="btn-text btn-num">0</p>
+                            </button>
+                        </div>
+                    </div>         
+                </div>
+                <div class="card transition">   
+                    <div class="card-item orange">
+                        <p class="card-item__title">việc cần làm</p>
+                        <div class="card-item__btns">
+                            <button class="btn">
+                                <p class="btn-text">Duyệt xin nghỉ</p>
+                                <p class="btn-text btn-num">0</p>
+                            </button>
+                            <button class="btn">
+                                <p class="btn-text">Duyệt đi muộn/về sớm</p>
+                                <p class="btn-text btn-num">0</p>
+                            </button>
+                            <button class="btn">
+                                <p class="btn-text">Duyệt xin WFH</p>
+                                <p class="btn-text btn-num">0</p>
+                            </button>
+                            <button class="btn">
+                                <p class="btn-text">Duyệt chấm công WFH</p>
+                                <p class="btn-text btn-num">0</p>
+                            </button>
+                            <button class="btn">
+                                <p class="btn-text">Đánh giá hợp đồng</p>
+                                <p class="btn-text btn-num">0</p>
+                            </button>
+                        </div>
+                    </div>        
+                </div>
+                <div class="card transition">        
+                    <div class="card-item violet">
+                        <p class="card-item__title">thông tin khác</p>
+                        <div class="card-item__btns">
+                            <button class="btn">
+                                <p class="btn-text">Dự án</p>
+                                <p class="btn-text btn-num"><i class="fas fa-chevron-right"></i></p>
+                            </button>
+                            <button class="btn">
+                                <p class="btn-text">Làm thêm giờ</p>
+                                <p class="btn-text btn-num"><i class="fas fa-chevron-right"></i></p>
+                            </button>
+                            <button class="btn">
+                                <p class="btn-text">Chấm công làm thêm giờ</p>
+                                <p class="btn-text btn-num"><i class="fas fa-chevron-right"></i></p>
+                            </button>
+                            <button class="btn">
+                                <p class="btn-text">Timesheet gửi khách hàng</p>
+                                <p class="btn-text btn-num"><i class="fas fa-chevron-right"></i></p>
+                            </button>
+                            <button class="btn">
+                                <p class="btn-text">Xem phiếu lương</p>
+                                <p class="btn-text btn-num"><i class="fas fa-chevron-right"></i></p>
+                            </button>
+                            <button class="btn">
+                                <p class="btn-text">Ủy quyền quyết toán thuế</p>
+                                <p class="btn-text btn-num"><i class="fas fa-chevron-right"></i></p>
+                            </button>
+                        </div>
+                    </div>   
+                </div>
+                <div class="card">    
+                    <div class="card-item card-table__item">
+                        <p class="card-item__title green1 content-dob__title">điểm danh</p>
+                        <div class="content-item__table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Ngày</th>
+                                        <th>Giờ vào</th>
+                                        <th>Giờ về</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>19-12-2022</td>
+                                        <td>08:07</td>
+                                        <td>17:47</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19-12-2022</td>
+                                        <td>08:07</td>
+                                        <td>17:47</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19-12-2022</td>
+                                        <td>08:07</td>
+                                        <td>17:47</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19-12-2022</td>
+                                        <td>08:07</td>
+                                        <td>17:47</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19-12-2022</td>
+                                        <td>08:07</td>
+                                        <td>17:47</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19-12-2022</td>
+                                        <td>08:07</td>
+                                        <td>17:47</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19-12-2022</td>
+                                        <td>08:07</td>
+                                        <td>17:47</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19-12-2022</td>
+                                        <td>08:07</td>
+                                        <td>17:47</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19-12-2022</td>
+                                        <td>08:07</td>
+                                        <td>17:47</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19-12-2022</td>
+                                        <td>08:07</td>
+                                        <td>17:47</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19-12-2022</td>
+                                        <td>08:07</td>
+                                        <td>17:47</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19-12-2022</td>
+                                        <td>08:07</td>
+                                        <td>17:47</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19-12-2022</td>
+                                        <td>08:07</td>
+                                        <td>17:47</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19-12-2022</td>
+                                        <td>08:07</td>
+                                        <td>17:47</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19-12-2022</td>
+                                        <td>08:07</td>
+                                        <td>17:47</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>       
+                </div>
+            </div>
+
+            <!-- content-cards__bottom here -->
+            <div class="content-cards__bottom">
+                <div class="card-table">    
+                    <div class="card-table__item">
+                        <p class="card-item__title blue1 content-dob__title">nghỉ phép</p>
+                        <div class="content-item__table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Loại nghỉ</th>
+                                        <th>Đã dùng</th>
+                                        <th>Còn lại</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="content_td">Nghỉ không lương</td>
+                                        <td>0</td>
+                                        <td>60</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content_td">Nghỉ vì việc gia đình (Bố, mẹ, vợ, chồng mất)</td>
+                                        <td>0</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content_td">Nghỉ cưới</td>
+                                        <td>0</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content_td">Nghỉ bù OT</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content_td">Nghỉ sinh</td>
+                                        <td>0</td>
+                                        <td>1807</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content_td">Nghỉ bù OT</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content_td">Nghỉ sinh</td>
+                                        <td>0</td>
+                                        <td>1807</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content_td">Nghỉ bù OT</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content_td">Nghỉ sinh</td>
+                                        <td>0</td>
+                                        <td>1807</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content_td">Nghỉ bù OT</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content_td">Nghỉ sinh</td>
+                                        <td>0</td>
+                                        <td>1807</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>       
+                </div>
+                <div class="card-table">     
+                    <div class="card-table__item">
+                        <p class="card-item__title blue2">lịch họp hôm nay</p>
+                        <div class="card-item__btns content-item__table">
+                            <div class="content__meeting">
+                                <p>Bạn không có lịch họp hôm nay!</p>
+                                <p>Ấn vào "+" để tạo lịch họp.</p>
+                             <button><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>      
+                </div>
+                <div class="card-table">     
+                    <div class="card-table__item">
+                        <p class="card-item__title green2 content-dob__title">sinh nhật thành viên</p>
+                        <div class="content-item__table">
+                            <div class="content-birthday">
+                                <div class="content-birthday__member">
+                                    <div class="content-birthday__img">
+                                        <img class="img" src="./img/NguyenHaHuongDiu.jpg" alt="">
+                                    </div>
+                                    <div class="content-birthday__info">
+                                        <p class="content-birthday__name">Nguyễn Hà Hương Dịu</p>
+                                        <p class="content-birthday__desc">ReactJS</p>
+                                        <p class="content-birthday__desc">02/10</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-birthday">
+                                <div class="content-birthday__member">
+                                    <div class="content-birthday__img">
+                                        <img class="img" src="./img/NguyenHaHuongDiu.jpg" alt="">
+                                    </div>
+                                    <div class="content-birthday__info">
+                                        <p class="content-birthday__name">Nguyễn Hà Hương Dịu</p>
+                                        <p class="content-birthday__desc">ReactJS</p>
+                                        <p class="content-birthday__desc">02/10</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-birthday">
+                                <div class="content-birthday__member">
+                                    <div class="content-birthday__img">
+                                        <img class="img" src="./img/NguyenHaHuongDiu.jpg" alt="">
+                                    </div>
+                                    <div class="content-birthday__info">
+                                        <p class="content-birthday__name">Nguyễn Hà Hương Dịu</p>
+                                        <p class="content-birthday__desc">ReactJS</p>
+                                        <p class="content-birthday__desc">02/10</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-birthday">
+                                <div class="content-birthday__member">
+                                    <div class="content-birthday__img">
+                                        <img class="img" src="./img/NguyenHaHuongDiu.jpg" alt="">
+                                    </div>
+                                    <div class="content-birthday__info">
+                                        <p class="content-birthday__name">Nguyễn Hà Hương Dịu</p>
+                                        <p class="content-birthday__desc">ReactJS</p>
+                                        <p class="content-birthday__desc">02/10</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-birthday">
+                                <div class="content-birthday__member">
+                                    <div class="content-birthday__img">
+                                        <img class="img" src="./img/NguyenHaHuongDiu.jpg" alt="">
+                                    </div>
+                                    <div class="content-birthday__info">
+                                        <p class="content-birthday__name">Nguyễn Hà Hương Dịu</p>
+                                        <p class="content-birthday__desc">ReactJS</p>
+                                        <p class="content-birthday__desc">02/10</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-birthday">
+                                <div class="content-birthday__member">
+                                    <div class="content-birthday__img">
+                                        <img class="img" src="./img/NguyenHaHuongDiu.jpg" alt="">
+                                    </div>
+                                    <div class="content-birthday__info">
+                                        <p class="content-birthday__name">Nguyễn Hà Hương Dịu</p>
+                                        <p class="content-birthday__desc">ReactJS</p>
+                                        <p class="content-birthday__desc">02/10</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-birthday">
+                                <div class="content-birthday__member">
+                                    <div class="content-birthday__img">
+                                        <img class="img" src="./img/NguyenHaHuongDiu.jpg" alt="">
+                                    </div>
+                                    <div class="content-birthday__info">
+                                        <p class="content-birthday__name">Nguyễn Hà Hương Dịu</p>
+                                        <p class="content-birthday__desc">ReactJS</p>
+                                        <p class="content-birthday__desc">02/10</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-birthday">
+                                <div class="content-birthday__member">
+                                    <div class="content-birthday__img">
+                                        <img class="img" src="./img/NguyenHaHuongDiu.jpg" alt="">
+                                    </div>
+                                    <div class="content-birthday__info">
+                                        <p class="content-birthday__name">Nguyễn Hà Hương Dịu</p>
+                                        <p class="content-birthday__desc">ReactJS</p>
+                                        <p class="content-birthday__desc">02/10</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-birthday">
+                                <div class="content-birthday__member">
+                                    <div class="content-birthday__img">
+                                        <img class="img" src="./img/NguyenHaHuongDiu.jpg" alt="">
+                                    </div>
+                                    <div class="content-birthday__info">
+                                        <p class="content-birthday__name">Nguyễn Hà Hương Dịu</p>
+                                        <p class="content-birthday__desc">ReactJS</p>
+                                        <p class="content-birthday__desc">02/10</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-birthday">
+                                <div class="content-birthday__member">
+                                    <div class="content-birthday__img">
+                                        <img class="img" src="./img/NguyenHaHuongDiu.jpg" alt="">
+                                    </div>
+                                    <div class="content-birthday__info">
+                                        <p class="content-birthday__name">Nguyễn Hà Hương Dịu</p>
+                                        <p class="content-birthday__desc">ReactJS</p>
+                                        <p class="content-birthday__desc">02/10</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+@media screen and (max-width: 1200px) {
+    /* html {
+        font-size: 9px;
+    } */
+    /* navbar here */
+    #navbar .navbar__menu--none {
+        display: none;
+    }
+
+    .content-cards__top, .content-cards__bottom {
+        flex-wrap: wrap;
+    }
+    .card, .card-table {
+        flex-basis: 50%;
+        margin: 0;
+    }
+    .card-item, .card-table__item {
+        margin: 1rem;
+    }
+
+
+}
+
+@media screen and (max-width: 992px) {
+    #navbar .navbar__menu--nonemd {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar__menu, .navbar__profile {
+        display: none;
+    }
+    .mobile-menu-btn {
+        display: flex;
+        justify-content: space-between;
+        /* float: right; */
+    }
+
+    .main__profile {
+        display: none;
+    }
+    .card, .card-table {
+        flex-basis: 100%;
+    }
+}
